@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Geburtsdatum formatieren
+    const birthdayElement = document.querySelector('.info-item:nth-child(2) p');
+    const birthday = new Date("2000-01-10");
+    const formattedBirthday = birthday.toLocaleDateString('de-DE', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+    });
+    
+    // Alter berechnen
+    const age = Math.floor((new Date() - birthday) / (365.25 * 24 * 60 * 60 * 1000));
+    birthdayElement.textContent = `${formattedBirthday} (${age} Jahre)`;
+
     // Typing-Effekt für den Hero-Text
     const heroText = document.querySelector('.hero-text h1');
     const text = heroText.textContent;
@@ -37,6 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.info-item').forEach(item => {
         observer.observe(item);
+    });
+
+    // Easter Egg: Dinosaurier-Animation
+    const dinoInfo = document.querySelector('.info-item:last-child');
+    let clicks = 0;
+    
+    dinoInfo.addEventListener('click', () => {
+        clicks++;
+        if (clicks === 3) {
+            dinoInfo.style.transform = 'rotate(360deg)';
+            dinoInfo.style.transition = 'transform 1s ease';
+            clicks = 0;
+        }
     });
 
     // Zufällige Farben für die Skill-Tags
