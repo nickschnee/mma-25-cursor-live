@@ -1,6 +1,6 @@
 # Projekt mit Vite und ES Modules
 
-## Initial Setup (wenn wir das Projekt selber von Grund auf erstellen)
+## 🔧 Initial Setup (wenn wir das Projekt selber von Grund auf erstellen)
 
 ```bash
 npm init -y
@@ -22,7 +22,7 @@ Installiert Vite als Development Dependency
 }
 ```
 
-Füge die scripts zum package.json file hinzu
+Füge die scripts zum package.json file hinzu (in die bereits bestehende script section)
 
 ```bash
 npm run dev
@@ -36,15 +36,13 @@ npm run build
 
 Buildet das Projekt für Production
 
-## Installation, wenn von GitHub geklont wird
+## ⬇️ Installation, wenn von GitHub geklont wird
 
 ```bash
 npm install
 ```
 
 Installiert alle Dependencies, die in 'package.json' definiert sind.
-
-## Starten des Projekts
 
 ```bash
 npm run dev
