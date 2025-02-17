@@ -1,16 +1,16 @@
-import { create, format, until } from 'datenow-ts';
+import { until, create } from "datenow-ts";
 
-// Geburtsdatum erstellen
-const birthDate = create.dateByParams({ year: 1990, month: 5, day: 20 }); // Beispiel: 20. Mai 1990
+// Create dates
+const now = create.dateNow();
+const birthDate = create.dateByDatestring('1989-03-21');
 
-// Heutiges Datum erstellen
-const today = create.dateNow();
+// Calculate age
+const age = until.years(birthDate, now);
 
-// Differenz zwischen Geburtsdatum und heutigem Datum berechnen
-const diff = until.diff(birthDate, today);
-
-// Differenz in Jahre umrechnen
-const age = diff.years;
-
-// Alter anzeigen
-console.log(`Ihr Alter: ${age}`);
+// Set age in the document
+const ageElement = document.getElementById('age');
+if (ageElement) {
+    ageElement.textContent = `${age} Jahre`;
+} else {
+    console.error('Element mit ID "age" wurde nicht gefunden!');
+}
