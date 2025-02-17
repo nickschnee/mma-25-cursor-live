@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    color: #2b6cb0;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 20px auto;
+    color: #3182ce;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #bee3f8;
+    display: flex;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    margin: 12px 0;
+    padding: 30px;
+    background-color: #ebf8ff;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hobby-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
