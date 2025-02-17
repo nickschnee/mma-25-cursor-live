@@ -3,15 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über mich</title>
+    <title>Claudio Riz</title>
     <link rel="stylesheet" href="claudio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Über mich</h1>
-    <img src="dein-bild.jpg" alt="Mein Bild" style="width:200px;height:auto;">
-    <p>Ich bin leidenschaftlich an Programmierung interessiert und liebe es, neue Technologien zu erkunden. Super!</p>
+    <div class="container">
+        <h1>Claudio Riz</h1>
+        <img src="/Claudio_Riz/img/bild_claudio.png" alt="das ist ein Bild von Claudio">
+        
+        <div class="intro-text">
+            <p>Ich bin leidenschaftlich an Programmierung interessiert und liebe es, neue Technologien zu erkunden. Super!</p>
+            <p class="age-text">Ich bin <span id="age"></span> Jahre alt (geboren am <span id="birthdate"></span>).</p>
+        </div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <i class="fas fa-code"></i>
+                <h3>Technische Fähigkeiten</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Ausbildung</h3>
+                <ul>
+                    <li>MMP-Student</li>
+                    <li>gelernter Polygraf</li>
+                </ul>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-heart"></i>
+                <h3>Interessen</h3>
+                <ul>
+                    <li>Programmieren</li>
+                    <li>Grafikdesign</li>
+                    <li>Künstliche Intelligenz</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h3>Meine tollen IM-Projekte</h3>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="claudio.js"></script>
 </body>
-
-<script src="claudio.js"></script>
-
 </html>
