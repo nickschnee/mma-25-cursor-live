@@ -39,3 +39,14 @@ function calculateAge(birthDate) {
 }
 const age = calculateAge("1998-09-23");
 document.getElementById('age').textContent = `${age.years} years, ${age.months} months, ${age.days} days, ${age.hours} hours`;
+
+// Dark Mode Toggle
+const darkModeToggle = document.createElement('button');
+darkModeToggle.innerHTML = '🌓';
+darkModeToggle.classList.add('dark-mode-toggle');
+document.body.appendChild(darkModeToggle);
+
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    darkModeToggle.innerHTML = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
