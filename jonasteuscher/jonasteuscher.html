@@ -8,75 +8,8 @@
     <script type="module" src="jonasteuscher.js"></script>
   </head>
   <body>
-    <style>
-      body {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        margin: 0;
-        cursor: default;
-      }
-
-      .round-image {
-        border-radius: 50%;
-      }
-
-      .profile-image img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-      }
-      .profile-container {
-        background-color: #f5f5f5;
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px;
-        max-width: 400px;
-        width: 90%;
-      }
-
-      .profile-container h1 {
-        margin: 15px 0 10px;
-        color: #333;
-      }
-
-      .profile-container p {
-        color: #666;
-        line-height: 1.5;
-        margin: 0;
-      }
-      ul {
-          list-style: none;
-          padding: 0;
-          margin: 20px 0;
-        }
-
-        li {
-          background-color: #fff;
-          margin: 10px 0;
-          padding: 12px 20px;
-          border-radius: 8px;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-          transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        li:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .social-icon {
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
-            margin-right: 8px;
-          }
-    </style>
     <div class="profile-container">
-        <a href="../index.html" style="display: block; margin-bottom: 20px; color: #666; text-decoration: none; text-align: left;">← Back to Overview</a>
+      <a href="../index.html" class="back-button">← Back to Overview</a>
       <div class="profile-image">
         <img
           src="jonasteuscher.png"
@@ -89,20 +22,91 @@
         I am a software engineer with a passion for building scalable and
         efficient systems.
       </p>
-      <p>Age: <span id="age"></span></p>
+      <br />
+      <p><b>Age: </b> <span id="age"></span></p>
       <h2>Hobbies</h2>
       <ul>
         <li>Programming</li>
-        <li>Bartending</li>
+        <li>Skiing</li>
         <li>Climbing/Hiking</li>
         <li>Skydiving</li>
+        <li>Bartending</li>
         <li>Photography/Videography</li>
         <li>Piano</li>
       </ul>
+
       <h2>Social Links</h2>
       <ul>
-        <li><a href="https://www.linkedin.com/in/jonas-teuscher/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon">LinkedIn</a></li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jonas-teuscher/"
+            target="_blank"
+            onmouseover="this.style.backgroundColor='#005885'"
+            onmouseout="this.style.backgroundColor='#0077b5'"
+            class="social-link-linkedin"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              alt="LinkedIn"
+              class="social-icon"
+              style="filter: brightness(0) invert(1); margin-right: 10px"
+            />
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/jonas.teuscher/"
+            target="_blank"
+            style="
+              display: flex;
+              align-items: center;
+              padding: 10px 20px;
+              background-color: #e4405f;
+              color: white;
+              text-decoration: none;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+            "
+            onmouseover="this.style.backgroundColor='#d1365d'"
+            onmouseout="this.style.backgroundColor='#E4405F'"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+              alt="Instagram"
+              class="social-icon"
+              style="filter: brightness(0) invert(1); margin-right: 10px"
+            />
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:jonas.teuscher@stud.fhgr.ch"
+            style="
+              display: flex;
+              align-items: center;
+              padding: 10px 20px;
+              background-color: #ea4335;
+              color: white;
+              text-decoration: none;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+            "
+            onmouseover="this.style.backgroundColor='#d63a2d'"
+            onmouseout="this.style.backgroundColor='#EA4335'"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              alt="Email"
+              class="social-icon"
+              style="filter: brightness(0) invert(1); margin-right: 10px"
+            />
+            Email
+          </a>
+        </li>
       </ul>
     </div>
+    
   </body>
 </html>
